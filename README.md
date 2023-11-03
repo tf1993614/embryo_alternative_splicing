@@ -1,11 +1,13 @@
-# Embryo splicing site project
+# Embryo alternative splicing project
 
 
 ## SRA to fastq conversion
 
-All single cell raw sequencing files (SRA) were downloaded by lanxiang Li using SRAtoolKit (version: 3.0.6). Metadata files are in the embryo_data.xlsx.
+All single cell raw sequencing files (SRA) were downloaded by lanxiang Li using SRAtoolKit (version: 3.0.6). Metadata files are in the **embryo_data.xlsx**.
 
-SRA to fastq conversion was done by the script (sra2fastq.sh) written by Feng Tang. Code is shown below. 
+All raw SRA files are in `/mnt/disk2/disk_new2/`
+
+SRA to fastq conversion was done by the script (**sra2fastq.sh**) written by Feng Tang. Code is shown below. 
 
 	#!/bin/bash
 
@@ -49,7 +51,11 @@ SRA to fastq conversion was done by the script (sra2fastq.sh) written by Feng Ta
 
 The following reference transcriptomes were downloaded from [10x Genomics](https://www.10xgenomics.com/support/software/cell-ranger/downloads#reference-downloads) website. 
 
-1. Human reference (GRCh38) - 2020-A  md5sum: dfd654de39bff23917471e7fcc7a00cd
-2. Mouse reference (mm10) - 2020-A  md5sum: 886eeddde8731ffb58552d0bb81f533d 		
+md5sum check values provied by the 10x genomics:
+1. refdata-gex-GRCh38-2020-A.tar.gz  **md5sum**: dfd654de39bff23917471e7fcc7a00cd
+2. refdata-gex-mm10-2020-A.tar.gz  **md5sum**: 886eeddde8731ffb58552d0bb81f533d 		
 
-tutorial
+Our own md5sum check values:
+- dfd654de39bff23917471e7fcc7a00cd  refdata-gex-GRCh38-2020-A.tar.gz
+- 886eeddde8731ffb58552d0bb81f533d  refdata-gex-mm10-2020-A.tar.gz
+
