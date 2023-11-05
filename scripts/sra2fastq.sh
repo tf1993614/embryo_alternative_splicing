@@ -40,5 +40,6 @@ do
 	mv "${dir}/${name}_2.fastq.gz" "${dir}/${name}_S1_L001_R2_001.fastq.gz"
 	echo "finish renaming for ${name}"
 
+	exit 1
 
 done
