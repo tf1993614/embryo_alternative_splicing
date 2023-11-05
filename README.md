@@ -55,12 +55,15 @@ SRA to fastq conversion was done by the script (**sra2fastq.sh**) written by Fen
 
 
 To parallelly run `sra2fastq.sh`, we can run `getfiles.sh` to get the directories containing SRA files, for example:
+	
 	bash getfiles.sh  /mnt/disk2/disk_new2/Human_data > samples.txt     #The result of `getfiles.sh` is shown in the samples.txt. 
 
 Then，run following code:
+	
 	parallel -a samples.txt bash sra2fastq.sh
 
 If want to change the output directory in the parallel run:
+	
 	parallel -a samples.txt -a samples2.txt bash sra2fastq.sh    # samples2.txt contains output directory
 
 
