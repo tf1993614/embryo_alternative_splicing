@@ -42,8 +42,14 @@ SRA to fastq conversion was done by the script (**sra2fastq.sh**) written by Fen
 
 
         	echo "target dir is ${dir}"
-        	echo $path | xargs -P 8 -I{} fastq-dump --split-files {} --outdir ${dir}
+        	echo $path | xargs -I{} fastq-dump --split-files --gzip {} --outdir ${dir}
         	echo "finish sra to fastq conversion for ${mame}"
+
+		
+		echo "rename fastq files to suit cell ranger name convention"
+        	mv "${dir}/${name}_1.fastq.gz" "${dir}/${name}_S1_L001_R1_001.fastq.gz"
+        	mv "${dir}/${name}_2.fastq.gz" "${dir}/${name}_S1_L001_R2_001.fastq.gz"
+        	echo "finish renaming for ${name}"
 
 	done
 
