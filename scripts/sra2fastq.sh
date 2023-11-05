@@ -38,7 +38,7 @@ do
 	echo "rename fastq files to suit cell ranger name convention"
 	mv "${dir}/${name}_1.fastq.gz" "${dir}/${name}_S1_L001_R1_001.fastq.gz"
 	mv "${dir}/${name}_2.fastq.gz" "${dir}/${name}_S1_L001_R2_001.fastq.gz"
-	echo "finish renameing for ${name}"
+	echo "finish renaming for ${name}"
 
 	exit 1
 
