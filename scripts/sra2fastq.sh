@@ -19,18 +19,27 @@ do
 	name=$(basename -s ".sra" ${path})
 	echo "wokring on ${name}"
 	
-	dir=$(echo ${path} | sed 's/\//\t/g' | awk -F "\t" '{print $1 "/" $2 "/" $3 "/" $4 "/" $5 "/" $6 "/" $7 "/" $8 "/"}')
+	dir=$(echo ${path} | sed 's/\//\t/g' | awk -F "\t" '{print $1 "/" $2 "/" $3 "/" $4 "/" $5 "/" $6 "/" $7 "/" $8}')
+	
 	
 	if [ "$#" -eq 2 ]
 	then 
 
 		echo "Warning: second argument is optional and should be the path to your output.Otherwise the default directory of SRA file will be used to output results"
-		dir=$2
+		append=$(echo ${path} | sed 's/\//\t/g' | awk -F "\t" -v OFS="/" '{print $5,$6,$7,$8}')
+		dir="$2/${append}"
    	fi
 	
 
 	echo "target dir is ${dir}"
-	echo $path | xargs -P 8 -I{} fastq-dump --split-files {} --outdir ${dir} 
-	echo "finish sra to fastq conversion for ${mame}"
+	echo $path | xargs -P 8 -I{} fastq-dump --split-files --gzip {} --outdir ${dir} 
+	echo "finish sra to fastq conversion for ${name}"
+
+	echo "rename fastq files to suit cell ranger name convention"
+	mv "${dir}/${name}_1.fastq.gz" "${dir}/${name}_S1_L001_R1_001.fastq.gz"
+	mv "${dir}/${name}_2.fastq.gz" "${dir}/${name}_S1_L001_R2_001.fastq.gz"
+	echo "finish renameing for ${name}"
+
+	exit 1
 
 done

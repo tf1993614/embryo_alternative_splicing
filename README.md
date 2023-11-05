@@ -36,7 +36,8 @@ SRA to fastq conversion was done by the script (**sra2fastq.sh**) written by Fen
         	then
 
                 	echo "Warning: second argument is optional and should be the path to your output.Otherwise the default directory of SRA file will be used to output results"
-                	dir=$2
+                	append=$(echo ${path} | sed 's/\//\t/g' | awk -F "\t" -v OFS="/" '{print $5,$6,$7,$8}')
+                	dir="$2/${append}"
         	fi
 
 
@@ -47,15 +48,15 @@ SRA to fastq conversion was done by the script (**sra2fastq.sh**) written by Fen
 	done
 
 
-## cellramger pipeline
+## Cellranger pipeline
 
 The following reference transcriptomes were downloaded from [10x Genomics](https://www.10xgenomics.com/support/software/cell-ranger/downloads#reference-downloads) website. 
 
 md5sum check values provied by the 10x genomics:
-1. refdata-gex-GRCh38-2020-A.tar.gz  **md5sum**: dfd654de39bff23917471e7fcc7a00cd
-2. refdata-gex-mm10-2020-A.tar.gz  **md5sum**: 886eeddde8731ffb58552d0bb81f533d 		
+1. refdata-gex-GRCh38-2020-A.tar.gz      **md5sum**: dfd654de39bff23917471e7fcc7a00cd
+2. refdata-gex-mm10-2020-A.tar.gz        **md5sum**: 886eeddde8731ffb58552d0bb81f533d 		
 
 Our own md5sum check values:
-- dfd654de39bff23917471e7fcc7a00cd  refdata-gex-GRCh38-2020-A.tar.gz
-- 886eeddde8731ffb58552d0bb81f533d  refdata-gex-mm10-2020-A.tar.gz
+- dfd654de39bff23917471e7fcc7a00cd       refdata-gex-GRCh38-2020-A.tar.gz
+- 886eeddde8731ffb58552d0bb81f533d       refdata-gex-mm10-2020-A.tar.gz
 
