@@ -3,7 +3,7 @@
 
 ## SRA to fastq conversion
 
-All single cell raw sequencing files (SRA) were downloaded by lanxiang Li using SRAtoolKit (version: 3.0.6). Metadata files are in the **embryo_data.xlsx**.
+All single cell raw sequencing files (SRA) were downloaded by lanxiang Li using SRAtoolKit (version: 3.0.6). Source description files are in the **embryo_data.xlsx**.
 
 All raw SRA files are in `/mnt/disk2/disk_new2/`
 
@@ -65,6 +65,11 @@ Then，run following code:
 If want to change the output directory in the parallel run:
 	
 	parallel -a samples.txt -a samples2.txt bash sra2fastq.sh    # samples2.txt contains output directory
+
+
+For raw sequencing files downloaded from GEO database, the metadata of each SRA file was obtained by running `GEO_crawl.R`
+
+	R GEO_crawl.R
 
 
 ## Cellranger pipeline
