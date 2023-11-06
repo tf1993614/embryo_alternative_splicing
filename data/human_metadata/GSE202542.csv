@@ -1,0 +1,41 @@
+sample_id,Status,Title,Sample type,Source name,Organism,Characteristics,Treatment protocol,Extracted molecule,Extraction protocol,Library strategy,Library source,Library selection,Instrument model,Description,Data processing,Submission date,Last update date,Contact name,Organization name,Street address,City,State/province,ZIP/Postal code,Country
+GSM6124200,"Public on Jun 02, 2022","E10 human embryo, in vitro attached",SRA,"human embryo
+",Homo sapiens,"tissue: human embryo
+developmental stage: E10
+","Cultured on plastic dish in IVC2 media.
+",total RNA,"The samples were dissociated with TrypLE for 15-30 min at 37 °C until they completely dissociated into single cells assessed by light microscopy. The dissociation solution was thoroughly washed, then samples were loaded for capture onthe 10x Chromium platform using the Single Cell 3′ v3 reagents. cDNA was synthesized and amplified according to the manufacturer's instructions (10X Genomics). The resulting libraries were sequenced on the Nova-seq platform.
+10x genomics v3
+10x genomics v3
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina NovaSeq 6000,"10x genomics
+","Data was aligned to hg19 using Cellranger and quality processed using the default settings to generate the counts file. Single cell data was further processed using Scanpy. Cells expressing >15,000 total genes or >20% mitochondrial genes were removed. Processed data here is generated using the write_csvs function in Scanpy, which split the dataframe into three files: the count matrix (.X), the annotation of features (.var) file, and the annotation of observations (.obs) file.
+Assembly: hg19
+Supplementary files format and content: comma separated values containing: count matrix (.X file), annotation of features (.var file) and annotations of observations (.obs file)
+","May 09, 2022","Jun 02, 2022",Mijo Simunovic,"Columbia University
+","500 W 120th st
+",New York,New York,10027,USA
+GSM6124201,"Public on Jun 02, 2022",hESC-derived xEM cells by BMP4/FGF2 differentiation on soft substrates,SRA,"RUES2
+",Homo sapiens,"cell line: RUES2
+","2 days of 50ng/mL BMP4, 20ng/mL FGF2 treatment in conditioned media on 1.5kPa substrate
+",total RNA,"The samples were dissociated with Accutase for 15-30 min at 37 °C until they completely dissociated into single cells assessed by light microscopy. The dissociation solution was thoroughly washed, then samples were loaded for capture onthe 10x Chromium platform using the Single Cell 3′ v3 reagents. cDNA was synthesized and amplified according to the manufacturer's instructions (10X Genomics). The resulting libraries were sequenced on the Nova-seq platform.
+10x genomics v3
+10x genomics v3
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina NovaSeq 6000,"10x genomics
+","Data was aligned to hg19 using Cellranger and quality processed using the default settings to generate the counts file. Single cell data was further processed using Scanpy. Cells expressing >15,000 total genes or >20% mitochondrial genes were removed. Processed data here is generated using the write_csvs function in Scanpy, which split the dataframe into three files: the count matrix (.X), the annotation of features (.var) file, and the annotation of observations (.obs) file.
+Assembly: hg19
+Supplementary files format and content: comma separated values containing: count matrix (.X file), annotation of features (.var file) and annotations of observations (.obs file)
+","May 09, 2022","Jun 02, 2022",Mijo Simunovic,"Columbia University
+","500 W 120th st
+",New York,New York,10027,USA
+GSM6124202,"Public on Jun 02, 2022","embryo model, 2.5 days after tissue assembly",SRA,"RUES2
+",Homo sapiens,"cell line: RUES2
+","3D epiblast and dissociated RUES2-xEM cells are mixed overnight with LDN, next day selected assembloids transferred to attachment substrate, cultured for 1.5 more days. Attached embryoids with a prominent 3D feature scraped off and dissociated for sequencing.
+",total RNA,"The samples were dissociated with Accutase for 15-30 min at 37 °C until they completely dissociated into single cells assessed by light microscopy. The dissociation solution was thoroughly washed, then samples were loaded for capture onthe 10x Chromium platform using the Single Cell 3′ v3 reagents. cDNA was synthesized and amplified according to the manufacturer's instructions (10X Genomics). The resulting libraries were sequenced on the Nova-seq platform.
+10x genomics v3
+10x genomics v3
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina NovaSeq 6000,"10x genomics
+","Data was aligned to hg19 using Cellranger and quality processed using the default settings to generate the counts file. Single cell data was further processed using Scanpy. Cells expressing >15,000 total genes or >20% mitochondrial genes were removed. This dataset was further quality controlled to remove an entire cluster with few transcripts. Processed data here is generated using the write_csvs function in Scanpy, which split the dataframe into three files: the count matrix (.X), the annotation of features (.var) file, and the annotation of observations (.obs) file.
+Assembly: hg19
+Supplementary files format and content: comma separated values containing: count matrix (.X file), annotation of features (.var file) and annotations of observations (.obs file)
+","May 09, 2022","Jun 02, 2022",Mijo Simunovic,"Columbia University
+","500 W 120th st
+",New York,New York,10027,USA

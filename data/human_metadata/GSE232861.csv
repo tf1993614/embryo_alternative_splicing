@@ -1,0 +1,17 @@
+sample_id,Status,Title,Sample type,Source name,Organism,Characteristics,Extracted molecule,Extraction protocol,Library strategy,Library source,Library selection,Instrument model,Data processing,Submission date,Last update date,Contact name,E-mail(s),Organization name,Department,Lab,Street address,City,State/province,ZIP/Postal code,Country
+GSM7384960,"Public on Jul 20, 2023","peri-gastruloid, day 11, rep1",SRA,"RUES2-GLR
+",Homo sapiens,"cell line: RUES2-GLR
+cell type: embryonic stem cell
+genotype: WT
+treatment: peri-gastruloid formation protocol
+",total RNA,"Day 11 peri-gastruloids were isolated via filter straining and centifugation before digestion in TrypLE. The resulting cell suspension was filtered and washed before loading into a 10X chromium chip.
+10X Library preparation according to 10X Genomics’ protocol of Chromium Next GEM Single Cell 3' Reagent Kits v3.1 (Dual Index). Illumnia NovaSeq 2000 (138 max bps P2) with 10X Genomics Single cell 3' v3
+",RNA-Seq,transcriptomic single cell,cDNA,NextSeq 2000,"All processing was done with the 10X cellranger ""count"" function using cellranger 7.1.0. Default parameters were used.
+Assembly: GRCh38-3.0.0
+Supplementary files format and content: The filtered scRNA count matrix is in the .h5 file format, and contains all confidently mapped reads for all cells.
+","May 18, 2023","Jul 20, 2023",Jun Wu,"jun2.wu@utsouthwestern.edu
+","University of Texas Southwestern Medical Center
+","Department of Molecular Biology
+","Wu lab
+","5323 harry Hines Blvd.
+",Dallas,Texas,75235,USA

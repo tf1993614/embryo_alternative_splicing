@@ -1,0 +1,199 @@
+sample_id,Status,Title,Sample type,Source name,Organism,Characteristics,Treatment protocol,Growth protocol,Extracted molecule,Extraction protocol,Library strategy,Library source,Library selection,Instrument model,Description,Data processing,Submission date,Last update date,Contact name,E-mail(s),Organization name,Department,Lab,Street address,City,State/province,ZIP/Postal code,Country
+GSM6338672,"Public on Jun 11, 2023",hEE Day4,SRA,"ESI017
+",Homo sapiens,"cell line: ESI017
+cell type: Human Pluripotent Stem Cells
+genotype: Wild type
+treatment: none
+time point: Day 4 in vitro
+","AggreWell plate is prepared as described in our previously established methods (Sozen et a. 2018 and 2019). The hPSCs were dissociated into single cells with accutase (Thermo Fisher Scientific) incubation at 37 °C for 3 to 4 minutes. Cells were pelleted by centrifugation for 3 minutes at 1,000 r.p.m. and resuspended in hEP media from Yang et al., 2017. MEFs depleted on gelatin coated plates at 37 °C in 5% CO2 on gelatinized tissue-culture-grade plates. Single cells resuspended in SDM were added dropwise to the AggreWell.
+","Prior to generation of hEEs, ESI017 cells were cultured in 37 °C in 5% CO2 on inactivated CF-1 MEFs in human expanded potential complete media (hEP media) as descired in Yang et al., 2017
+",polyA RNA,"The extra-embryoids that exhibited an inner and outer compartment organization under brightfield are collected on day 4 and day 6 for single-cell isolation. Roughly 200 aggregates per time-points were serially washed with 0.1% BSA in PBS and briefly washed before incubation in 200 mL TrypLE (GIBCO) and incubation at 37ºC. At five-minute intervals, structures were dissociated by pipetting under a stereomicroscope and returned to incubation until confirmed to be predominantly single-cell suspension. Although the epithelial cells of the internal compartment dissociated readily, additional time was required to fully dissociate cells in the outside layer due to the appearance of a more extensive extracellular matrix. Once dissociated, cells were collected in a total of 1 mL 0.1% BSA in PBS and filtered using a FlowMi™ cell strainer (40 mM, Scienceware®) and centrifuged for 5 min at 1,000 rpm. After two washes, single-cell suspensions were resuspended at a set volume, counted using a standard hemocytometer, and adjusted to 1,000 cells per μL. 
+16,500 single cells for each time point were loaded onto a Chromium Controller (10x genomics) to generate single-cell transcriptomes using the Chromium Next GEM Single Cell 3ʹ platform according to the manufacturer’s protocol (10x Genomics).
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina NovaSeq 6000,"Chromium Next GEM Single Cell 3ʹ platform (10x Genomics)
+","Prior to more detailed analyses, the overall runs were validated according to the initial CellRanger outputs, including ~30,000 mean transcripts per cell and 3,800 median genes per cell. The overall fraction of transcripts represented by mitochondrial genes was less than 5%. A total of 22,054 cells were obtained for day 4 and day 6 aggregates. Day 4 consisted of 10,826 cells, and Day 6 aggregates comprised 11,228 cells. 
+After initial validation of the library quality, preliminary clustering and filtering steps were taken to identify and eliminate library preparation and sequencing artifacts. These include the removal of cells with >10% mitochondrial transcript counts to discard nonviable cells (1493 cells, 6.7% of total), >27500 transcript counts to remove likely doublets (1069 cells, 4.8% of total), and <3430 transcripts to remove low-quality cells (2013 cells, 9.0% of total). A total of 19,247 cells were preserved at this stage, corresponding to 85.8% of total cells. Data for days 4 and 6 were processed separately using the Seurat v.4.0.1 package pipeline in R v.4.0.3.
+Processing steps include library log normalization, data scaling, and linear dimensionality reduction through principal component analysis (PCA) using the most highly variable genes in the sample, found with a variance stabilizing transformation. We then applied the UMAP algorithm for non-linear dimensionality reduction into two dimensions. Cell cycle scores were also calculated for single cells based on the expression of canonical proliferation markers for S and G2M phases, using Seurat’s CellCycleScoring function. These scores were used in a regression model to reduce variance derived from cell cycle differences during data scaling, and subsequent dimensionality reduction steps were re-performed. All processing steps were performed with default parameters unless specified. We observed a high degree of separation between day 4 and day 6 samples in the low-dimensionality projection, suggesting a possible batch effect. We performed data integration using reciprocal PCA to correct technical variance while conservatively accounting for timepoint-specific transcriptional states. Integrated data were re-scaled and reduced to 30 principal components, then further reduced with UMAP for visualization in two dimensions, with default parameters
+Assembly: hg38
+Supplementary files format and content: Tab-separated values files and matrix files
+","Jul 14, 2022","Jun 11, 2023",Berna Sozen,"berna.sozen@yale.edu
+","Yale School of Medicine
+","Department of Genetics
+","Sozen Lab
+","333 Cedar St
+",New Haven,CT,06520,USA
+GSM6338673,"Public on Jun 11, 2023",hEE Day6,SRA,"ESI017
+",Homo sapiens,"cell line: ESI017
+cell type: Human Pluripotent Stem Cells
+genotype: Wild type
+treatment: none
+time point: Day 6 in vitro
+","AggreWell plate is prepared as described in our previously established methods (Sozen et a. 2018 and 2019). The hPSCs were dissociated into single cells with accutase (Thermo Fisher Scientific) incubation at 37 °C for 3 to 4 minutes. Cells were pelleted by centrifugation for 3 minutes at 1,000 r.p.m. and resuspended in hEP media from Yang et al., 2017. MEFs depleted on gelatin coated plates at 37 °C in 5% CO2 on gelatinized tissue-culture-grade plates. Single cells resuspended in SDM were added dropwise to the AggreWell.
+","Prior to generation of hEEs, ESI017 cells were cultured in 37 °C in 5% CO2 on inactivated CF-1 MEFs in human expanded potential complete media (hEP media) as descired in Yang et al., 2017
+",polyA RNA,"The extra-embryoids that exhibited an inner and outer compartment organization under brightfield are collected on day 4 and day 6 for single-cell isolation. Roughly 200 aggregates per time-points were serially washed with 0.1% BSA in PBS and briefly washed before incubation in 200 mL TrypLE (GIBCO) and incubation at 37ºC. At five-minute intervals, structures were dissociated by pipetting under a stereomicroscope and returned to incubation until confirmed to be predominantly single-cell suspension. Although the epithelial cells of the internal compartment dissociated readily, additional time was required to fully dissociate cells in the outside layer due to the appearance of a more extensive extracellular matrix. Once dissociated, cells were collected in a total of 1 mL 0.1% BSA in PBS and filtered using a FlowMi™ cell strainer (40 mM, Scienceware®) and centrifuged for 5 min at 1,000 rpm. After two washes, single-cell suspensions were resuspended at a set volume, counted using a standard hemocytometer, and adjusted to 1,000 cells per μL. 
+16,500 single cells for each time point were loaded onto a Chromium Controller (10x genomics) to generate single-cell transcriptomes using the Chromium Next GEM Single Cell 3ʹ platform according to the manufacturer’s protocol (10x Genomics).
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina NovaSeq 6000,"Chromium Next GEM Single Cell 3ʹ platform (10x Genomics)
+","Prior to more detailed analyses, the overall runs were validated according to the initial CellRanger outputs, including ~30,000 mean transcripts per cell and 3,800 median genes per cell. The overall fraction of transcripts represented by mitochondrial genes was less than 5%. A total of 22,054 cells were obtained for day 4 and day 6 aggregates. Day 4 consisted of 10,826 cells, and Day 6 aggregates comprised 11,228 cells. 
+After initial validation of the library quality, preliminary clustering and filtering steps were taken to identify and eliminate library preparation and sequencing artifacts. These include the removal of cells with >10% mitochondrial transcript counts to discard nonviable cells (1493 cells, 6.7% of total), >27500 transcript counts to remove likely doublets (1069 cells, 4.8% of total), and <3430 transcripts to remove low-quality cells (2013 cells, 9.0% of total). A total of 19,247 cells were preserved at this stage, corresponding to 85.8% of total cells. Data for days 4 and 6 were processed separately using the Seurat v.4.0.1 package pipeline in R v.4.0.3.
+Processing steps include library log normalization, data scaling, and linear dimensionality reduction through principal component analysis (PCA) using the most highly variable genes in the sample, found with a variance stabilizing transformation. We then applied the UMAP algorithm for non-linear dimensionality reduction into two dimensions. Cell cycle scores were also calculated for single cells based on the expression of canonical proliferation markers for S and G2M phases, using Seurat’s CellCycleScoring function. These scores were used in a regression model to reduce variance derived from cell cycle differences during data scaling, and subsequent dimensionality reduction steps were re-performed. All processing steps were performed with default parameters unless specified. We observed a high degree of separation between day 4 and day 6 samples in the low-dimensionality projection, suggesting a possible batch effect. We performed data integration using reciprocal PCA to correct technical variance while conservatively accounting for timepoint-specific transcriptional states. Integrated data were re-scaled and reduced to 30 principal components, then further reduced with UMAP for visualization in two dimensions, with default parameters
+Assembly: hg38
+Supplementary files format and content: Tab-separated values files and matrix files
+","Jul 14, 2022","Jun 11, 2023",Berna Sozen,"berna.sozen@yale.edu
+","Yale School of Medicine
+","Department of Genetics
+","Sozen Lab
+","333 Cedar St
+",New Haven,CT,06520,USA
+GSM7486546,"Public on Jun 15, 2023",Undifferentiated hPSCS Replicate 1,SRA,"Cell line
+",Homo sapiens,"tissue: Cell line
+cell line: RUES2-GLR
+cell type: Human Embryonic Stem Cell Line
+genotype: RUES2 cell line (NIHhESC-09-0013) containing Sox2 and Sox17 reporters (see PMID: 29795348)
+treatment: Undifferentiated
+","hEEs are generated by plating single cells onto AggreWell plates in Spontaneous Differentiation Media (SDM) supplemented with 5µM of ROCK inhibitor (Y27632) for the first 24h of aggregation. At D3, media is exchanged with mIVC2 media (described in Xiang et al. 2020). Cells were then trypsinized to single cell, FACS purified using a Sony SH800S Cell Sorter to a minimum of 10,000 cells for each fraction, and snap frozen.
+","hEPSCs were cultured in human expanded potential-complete media (hEP-LCDM media) as described in Yang et al., 2017 with addition of 1 µM WNT inhibitor IWR and 2 µM ROCK inhibitor (Y27632) (hEP-LCDMYI).
+",genomic DNA,"DNA purification using a DNA lysis buffer comprised of 10 mM Tris, 10 mM NaCl, 10 mM EDTA and 0.5 % SDS and 300 mg/mL molecular biology grade Proteinase K (Roche), ~6 hours of incubation at 55ºC, phenol:chloroform purification and ethanol based purification.'
+Genomic DNA was sheared using a Covaris S220 Ultrasonicator to ~400 bp. Re-concentrated DNA was then Bisulfite converted using the EZ-DNA methylation Gold Kit (Zymo Research) and synthesized into libraries using the xGen™ methylation sequencing DNA methylation kit using unique dual index adapters (IDT). Final libraries were amplified with 10 PCR cycles.
+",Bisulfite-Seq,genomic,RANDOM,Illumina NovaSeq 6000,"WGBS
+","Bisulfite-converted reads were quality filtered and adapter trimmed using cutadapt (v2.4), followed by alignment to the hg19 reference genome with bsmap using the following parameter: -v 0.01 -s 16 -w 100 -S 1 -R -u -q 20.
+Duplicate reads were removed using GATK MarkDuplicates (v4.1.0.0).
+Methylation rates were called using mcall using default parameter and subsequently filtered for coverage (min 10 reads, max 150) as well as autosomes.
+Assembly: hg19
+Supplementary files format and content: Bigwig file of 10X filtered methylation rates
+","Jun 14, 2023","Jun 15, 2023",Berna Sozen,"berna.sozen@yale.edu
+","Yale School of Medicine
+","Department of Genetics
+","Sozen Lab
+","333 Cedar St
+",New Haven,CT,06520,USA
+GSM7486547,"Public on Jun 15, 2023",Undifferentiated hPSCS Replicate 2,SRA,"Cell line
+",Homo sapiens,"tissue: Cell line
+cell line: RUES2-GLR
+cell type: Human Embryonic Stem Cell Line
+genotype: RUES2 cell line (NIHhESC-09-0013) containing Sox2 and Sox17 reporters (see PMID: 29795348)
+treatment: Undifferentiated
+","hEEs are generated by plating single cells onto AggreWell plates in Spontaneous Differentiation Media (SDM) supplemented with 5µM of ROCK inhibitor (Y27632) for the first 24h of aggregation. At D3, media is exchanged with mIVC2 media (described in Xiang et al. 2020). Cells were then trypsinized to single cell, FACS purified using a Sony SH800S Cell Sorter to a minimum of 10,000 cells for each fraction, and snap frozen.
+","hEPSCs were cultured in human expanded potential-complete media (hEP-LCDM media) as described in Yang et al., 2017 with addition of 1 µM WNT inhibitor IWR and 2 µM ROCK inhibitor (Y27632) (hEP-LCDMYI).
+",genomic DNA,"DNA purification using a DNA lysis buffer comprised of 10 mM Tris, 10 mM NaCl, 10 mM EDTA and 0.5 % SDS and 300 mg/mL molecular biology grade Proteinase K (Roche), ~6 hours of incubation at 55ºC, phenol:chloroform purification and ethanol based purification.'
+Genomic DNA was sheared using a Covaris S220 Ultrasonicator to ~400 bp. Re-concentrated DNA was then Bisulfite converted using the EZ-DNA methylation Gold Kit (Zymo Research) and synthesized into libraries using the xGen™ methylation sequencing DNA methylation kit using unique dual index adapters (IDT). Final libraries were amplified with 10 PCR cycles.
+",Bisulfite-Seq,genomic,RANDOM,Illumina NovaSeq 6000,"WGBS
+","Bisulfite-converted reads were quality filtered and adapter trimmed using cutadapt (v2.4), followed by alignment to the hg19 reference genome with bsmap using the following parameter: -v 0.01 -s 16 -w 100 -S 1 -R -u -q 20.
+Duplicate reads were removed using GATK MarkDuplicates (v4.1.0.0).
+Methylation rates were called using mcall using default parameter and subsequently filtered for coverage (min 10 reads, max 150) as well as autosomes.
+Assembly: hg19
+Supplementary files format and content: Bigwig file of 10X filtered methylation rates
+","Jun 14, 2023","Jun 15, 2023",Berna Sozen,"berna.sozen@yale.edu
+","Yale School of Medicine
+","Department of Genetics
+","Sozen Lab
+","333 Cedar St
+",New Haven,CT,06520,USA
+GSM7486548,"Public on Jun 15, 2023","D4 hEEs, double negative fraction, Replicate 1",SRA,"Cell line
+",Homo sapiens,"tissue: Cell line
+cell line: RUES2-GLR
+cell type: Human Embryonic Stem Cell Line
+genotype: RUES2 cell line (NIHhESC-09-0013) containing Sox2 and Sox17 reporters (see PMID: 29795348)
+treatment: 4 day differentiation into hEEs
+","hEEs are generated by plating single cells onto AggreWell plates in Spontaneous Differentiation Media (SDM) supplemented with 5µM of ROCK inhibitor (Y27632) for the first 24h of aggregation. At D3, media is exchanged with mIVC2 media (described in Xiang et al. 2020). Cells were then trypsinized to single cell, FACS purified using a Sony SH800S Cell Sorter to a minimum of 10,000 cells for each fraction, and snap frozen.
+","hEPSCs were cultured in human expanded potential-complete media (hEP-LCDM media) as described in Yang et al., 2017 with addition of 1 µM WNT inhibitor IWR and 2 µM ROCK inhibitor (Y27632) (hEP-LCDMYI).
+",genomic DNA,"DNA purification using a DNA lysis buffer comprised of 10 mM Tris, 10 mM NaCl, 10 mM EDTA and 0.5 % SDS and 300 mg/mL molecular biology grade Proteinase K (Roche), ~6 hours of incubation at 55ºC, phenol:chloroform purification and ethanol based purification.'
+Genomic DNA was sheared using a Covaris S220 Ultrasonicator to ~400 bp. Re-concentrated DNA was then Bisulfite converted using the EZ-DNA methylation Gold Kit (Zymo Research) and synthesized into libraries using the xGen™ methylation sequencing DNA methylation kit using unique dual index adapters (IDT). Final libraries were amplified with 10 PCR cycles.
+",Bisulfite-Seq,genomic,RANDOM,Illumina NovaSeq 6000,"WGBS
+","Bisulfite-converted reads were quality filtered and adapter trimmed using cutadapt (v2.4), followed by alignment to the hg19 reference genome with bsmap using the following parameter: -v 0.01 -s 16 -w 100 -S 1 -R -u -q 20.
+Duplicate reads were removed using GATK MarkDuplicates (v4.1.0.0).
+Methylation rates were called using mcall using default parameter and subsequently filtered for coverage (min 10 reads, max 150) as well as autosomes.
+Assembly: hg19
+Supplementary files format and content: Bigwig file of 10X filtered methylation rates
+","Jun 14, 2023","Jun 15, 2023",Berna Sozen,"berna.sozen@yale.edu
+","Yale School of Medicine
+","Department of Genetics
+","Sozen Lab
+","333 Cedar St
+",New Haven,CT,06520,USA
+GSM7486549,"Public on Jun 15, 2023","D4 hEEs, Sox17 positive fraction, Replicate 1",SRA,"Cell line
+",Homo sapiens,"tissue: Cell line
+cell line: RUES2-GLR
+cell type: Human Embryonic Stem Cell Line
+genotype: RUES2 cell line (NIHhESC-09-0013) containing Sox2 and Sox17 reporters (see PMID: 29795348)
+treatment: 4 day differentiation into hEEs
+","hEEs are generated by plating single cells onto AggreWell plates in Spontaneous Differentiation Media (SDM) supplemented with 5µM of ROCK inhibitor (Y27632) for the first 24h of aggregation. At D3, media is exchanged with mIVC2 media (described in Xiang et al. 2020). Cells were then trypsinized to single cell, FACS purified using a Sony SH800S Cell Sorter to a minimum of 10,000 cells for each fraction, and snap frozen.
+","hEPSCs were cultured in human expanded potential-complete media (hEP-LCDM media) as described in Yang et al., 2017 with addition of 1 µM WNT inhibitor IWR and 2 µM ROCK inhibitor (Y27632) (hEP-LCDMYI).
+",genomic DNA,"DNA purification using a DNA lysis buffer comprised of 10 mM Tris, 10 mM NaCl, 10 mM EDTA and 0.5 % SDS and 300 mg/mL molecular biology grade Proteinase K (Roche), ~6 hours of incubation at 55ºC, phenol:chloroform purification and ethanol based purification.'
+Genomic DNA was sheared using a Covaris S220 Ultrasonicator to ~400 bp. Re-concentrated DNA was then Bisulfite converted using the EZ-DNA methylation Gold Kit (Zymo Research) and synthesized into libraries using the xGen™ methylation sequencing DNA methylation kit using unique dual index adapters (IDT). Final libraries were amplified with 10 PCR cycles.
+",Bisulfite-Seq,genomic,RANDOM,Illumina NovaSeq 6000,"WGBS
+","Bisulfite-converted reads were quality filtered and adapter trimmed using cutadapt (v2.4), followed by alignment to the hg19 reference genome with bsmap using the following parameter: -v 0.01 -s 16 -w 100 -S 1 -R -u -q 20.
+Duplicate reads were removed using GATK MarkDuplicates (v4.1.0.0).
+Methylation rates were called using mcall using default parameter and subsequently filtered for coverage (min 10 reads, max 150) as well as autosomes.
+Assembly: hg19
+Supplementary files format and content: Bigwig file of 10X filtered methylation rates
+","Jun 14, 2023","Jun 15, 2023",Berna Sozen,"berna.sozen@yale.edu
+","Yale School of Medicine
+","Department of Genetics
+","Sozen Lab
+","333 Cedar St
+",New Haven,CT,06520,USA
+GSM7486550,"Public on Jun 15, 2023","D4 hEEs, Sox17 positive fraction, Replicate 2",SRA,"Cell line
+",Homo sapiens,"tissue: Cell line
+cell line: RUES2-GLR
+cell type: Human Embryonic Stem Cell Line
+genotype: RUES2 cell line (NIHhESC-09-0013) containing Sox2 and Sox17 reporters (see PMID: 29795348)
+treatment: 4 day differentiation into hEEs
+","hEEs are generated by plating single cells onto AggreWell plates in Spontaneous Differentiation Media (SDM) supplemented with 5µM of ROCK inhibitor (Y27632) for the first 24h of aggregation. At D3, media is exchanged with mIVC2 media (described in Xiang et al. 2020). Cells were then trypsinized to single cell, FACS purified using a Sony SH800S Cell Sorter to a minimum of 10,000 cells for each fraction, and snap frozen.
+","hEPSCs were cultured in human expanded potential-complete media (hEP-LCDM media) as described in Yang et al., 2017 with addition of 1 µM WNT inhibitor IWR and 2 µM ROCK inhibitor (Y27632) (hEP-LCDMYI).
+",genomic DNA,"DNA purification using a DNA lysis buffer comprised of 10 mM Tris, 10 mM NaCl, 10 mM EDTA and 0.5 % SDS and 300 mg/mL molecular biology grade Proteinase K (Roche), ~6 hours of incubation at 55ºC, phenol:chloroform purification and ethanol based purification.'
+Genomic DNA was sheared using a Covaris S220 Ultrasonicator to ~400 bp. Re-concentrated DNA was then Bisulfite converted using the EZ-DNA methylation Gold Kit (Zymo Research) and synthesized into libraries using the xGen™ methylation sequencing DNA methylation kit using unique dual index adapters (IDT). Final libraries were amplified with 10 PCR cycles.
+",Bisulfite-Seq,genomic,RANDOM,Illumina NovaSeq 6000,"WGBS
+","Bisulfite-converted reads were quality filtered and adapter trimmed using cutadapt (v2.4), followed by alignment to the hg19 reference genome with bsmap using the following parameter: -v 0.01 -s 16 -w 100 -S 1 -R -u -q 20.
+Duplicate reads were removed using GATK MarkDuplicates (v4.1.0.0).
+Methylation rates were called using mcall using default parameter and subsequently filtered for coverage (min 10 reads, max 150) as well as autosomes.
+Assembly: hg19
+Supplementary files format and content: Bigwig file of 10X filtered methylation rates
+","Jun 14, 2023","Jun 15, 2023",Berna Sozen,"berna.sozen@yale.edu
+","Yale School of Medicine
+","Department of Genetics
+","Sozen Lab
+","333 Cedar St
+",New Haven,CT,06520,USA
+GSM7486551,"Public on Jun 15, 2023","D4 hEEs, Sox2 positive fraction, Replicate 1",SRA,"Cell line
+",Homo sapiens,"tissue: Cell line
+cell line: RUES2-GLR
+cell type: Human Embryonic Stem Cell Line
+genotype: RUES2 cell line (NIHhESC-09-0013) containing Sox2 and Sox17 reporters (see PMID: 29795348)
+treatment: 4 day differentiation into hEEs
+","hEEs are generated by plating single cells onto AggreWell plates in Spontaneous Differentiation Media (SDM) supplemented with 5µM of ROCK inhibitor (Y27632) for the first 24h of aggregation. At D3, media is exchanged with mIVC2 media (described in Xiang et al. 2020). Cells were then trypsinized to single cell, FACS purified using a Sony SH800S Cell Sorter to a minimum of 10,000 cells for each fraction, and snap frozen.
+","hEPSCs were cultured in human expanded potential-complete media (hEP-LCDM media) as described in Yang et al., 2017 with addition of 1 µM WNT inhibitor IWR and 2 µM ROCK inhibitor (Y27632) (hEP-LCDMYI).
+",genomic DNA,"DNA purification using a DNA lysis buffer comprised of 10 mM Tris, 10 mM NaCl, 10 mM EDTA and 0.5 % SDS and 300 mg/mL molecular biology grade Proteinase K (Roche), ~6 hours of incubation at 55ºC, phenol:chloroform purification and ethanol based purification.'
+Genomic DNA was sheared using a Covaris S220 Ultrasonicator to ~400 bp. Re-concentrated DNA was then Bisulfite converted using the EZ-DNA methylation Gold Kit (Zymo Research) and synthesized into libraries using the xGen™ methylation sequencing DNA methylation kit using unique dual index adapters (IDT). Final libraries were amplified with 10 PCR cycles.
+",Bisulfite-Seq,genomic,RANDOM,Illumina NovaSeq 6000,"WGBS
+","Bisulfite-converted reads were quality filtered and adapter trimmed using cutadapt (v2.4), followed by alignment to the hg19 reference genome with bsmap using the following parameter: -v 0.01 -s 16 -w 100 -S 1 -R -u -q 20.
+Duplicate reads were removed using GATK MarkDuplicates (v4.1.0.0).
+Methylation rates were called using mcall using default parameter and subsequently filtered for coverage (min 10 reads, max 150) as well as autosomes.
+Assembly: hg19
+Supplementary files format and content: Bigwig file of 10X filtered methylation rates
+","Jun 14, 2023","Jun 15, 2023",Berna Sozen,"berna.sozen@yale.edu
+","Yale School of Medicine
+","Department of Genetics
+","Sozen Lab
+","333 Cedar St
+",New Haven,CT,06520,USA
+GSM7486552,"Public on Jun 15, 2023","D4 hEEs, Sox2 positive fraction, Replicate 2",SRA,"Cell line
+",Homo sapiens,"tissue: Cell line
+cell line: RUES2-GLR
+cell type: Human Embryonic Stem Cell Line
+genotype: RUES2 cell line (NIHhESC-09-0013) containing Sox2 and Sox17 reporters (see PMID: 29795348)
+treatment: 4 day differentiation into hEEs
+","hEEs are generated by plating single cells onto AggreWell plates in Spontaneous Differentiation Media (SDM) supplemented with 5µM of ROCK inhibitor (Y27632) for the first 24h of aggregation. At D3, media is exchanged with mIVC2 media (described in Xiang et al. 2020). Cells were then trypsinized to single cell, FACS purified using a Sony SH800S Cell Sorter to a minimum of 10,000 cells for each fraction, and snap frozen.
+","hEPSCs were cultured in human expanded potential-complete media (hEP-LCDM media) as described in Yang et al., 2017 with addition of 1 µM WNT inhibitor IWR and 2 µM ROCK inhibitor (Y27632) (hEP-LCDMYI).
+",genomic DNA,"DNA purification using a DNA lysis buffer comprised of 10 mM Tris, 10 mM NaCl, 10 mM EDTA and 0.5 % SDS and 300 mg/mL molecular biology grade Proteinase K (Roche), ~6 hours of incubation at 55ºC, phenol:chloroform purification and ethanol based purification.'
+Genomic DNA was sheared using a Covaris S220 Ultrasonicator to ~400 bp. Re-concentrated DNA was then Bisulfite converted using the EZ-DNA methylation Gold Kit (Zymo Research) and synthesized into libraries using the xGen™ methylation sequencing DNA methylation kit using unique dual index adapters (IDT). Final libraries were amplified with 10 PCR cycles.
+",Bisulfite-Seq,genomic,RANDOM,Illumina NovaSeq 6000,"WGBS
+","Bisulfite-converted reads were quality filtered and adapter trimmed using cutadapt (v2.4), followed by alignment to the hg19 reference genome with bsmap using the following parameter: -v 0.01 -s 16 -w 100 -S 1 -R -u -q 20.
+Duplicate reads were removed using GATK MarkDuplicates (v4.1.0.0).
+Methylation rates were called using mcall using default parameter and subsequently filtered for coverage (min 10 reads, max 150) as well as autosomes.
+Assembly: hg19
+Supplementary files format and content: Bigwig file of 10X filtered methylation rates
+","Jun 14, 2023","Jun 15, 2023",Berna Sozen,"berna.sozen@yale.edu
+","Yale School of Medicine
+","Department of Genetics
+","Sozen Lab
+","333 Cedar St
+",New Haven,CT,06520,USA

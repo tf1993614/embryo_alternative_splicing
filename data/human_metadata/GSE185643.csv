@@ -1,0 +1,87 @@
+sample_id,Status,Title,Sample type,Source name,Organism,Characteristics,Treatment protocol,Growth protocol,Extracted molecule,Extraction protocol,Library strategy,Library source,Library selection,Instrument model,Data processing,Submission date,Last update date,Contact name,E-mail(s),Organization name,Department,Street address,City,State/province,ZIP/Postal code,Country
+GSM5621089,"Public on Oct 13, 2021","Human microfluidic embryoids at 24, 36 48 hours",SRA,"microfluidic embryoids
+",Homo sapiens,"genotype: wildtype
+","see the associated publication
+","see the associated publication
+",polyA RNA,"see the associated publication
+10x genomics
+",RNA-Seq,transcriptomic,cDNA,Illumina NovaSeq 6000,"see the associated publication
+Genome_build: GRCh38.p13 and Pan_tro_3.0
+Supplementary_files_format_and_content: .Rd files are the output of R Studio containing the data anlaysis ressults. The .Rd files can be loaded into RStudio using ""load (""file_name.Rd"")"", and analyzed using the Seurat R package (https://satijalab.org/seurat/). In case of difficulties accessing the data, please contact Dr. Yi Zheng (zhengum@umich.edu)
+","Oct 11, 2021","Oct 14, 2021",Yi Zheng,"yzheng88@syr.edu
+","Syracuse University
+","Biomedical and Chemical Engineering
+","900 S Crouse Ave
+",Syracuse,New York,13210,USA
+GSM5621090,"Public on Oct 13, 2021",Human NODAL-KO embryoids at 48h,SRA,"microfluidic embryoids
+",Homo sapiens,"genotype: NODAL-KO_mutant
+","see the associated publication
+","see the associated publication
+",polyA RNA,"see the associated publication
+10x genomics
+",RNA-Seq,transcriptomic,cDNA,Illumina NovaSeq 6000,"see the associated publication
+Genome_build: GRCh38.p13 and Pan_tro_3.0
+Supplementary_files_format_and_content: .Rd files are the output of R Studio containing the data anlaysis ressults. The .Rd files can be loaded into RStudio using ""load (""file_name.Rd"")"", and analyzed using the Seurat R package (https://satijalab.org/seurat/). In case of difficulties accessing the data, please contact Dr. Yi Zheng (zhengum@umich.edu)
+","Oct 11, 2021","Oct 14, 2021",Yi Zheng,"yzheng88@syr.edu
+","Syracuse University
+","Biomedical and Chemical Engineering
+","900 S Crouse Ave
+",Syracuse,New York,13210,USA
+GSM5621091,"Public on Oct 13, 2021",Human chimpanzee embryoids at 48h,SRA,"microfluidic embryoids
+",Pan troglodytes,"genotype: wildtype
+","see the associated publication
+","see the associated publication
+",polyA RNA,"see the associated publication
+10x genomics
+",RNA-Seq,transcriptomic,cDNA,Illumina NovaSeq 6000,"see the associated publication
+Genome_build: GRCh38.p13 and Pan_tro_3.0
+Supplementary_files_format_and_content: .Rd files are the output of R Studio containing the data anlaysis ressults. The .Rd files can be loaded into RStudio using ""load (""file_name.Rd"")"", and analyzed using the Seurat R package (https://satijalab.org/seurat/). In case of difficulties accessing the data, please contact Dr. Yi Zheng (zhengum@umich.edu)
+","Oct 11, 2021","Oct 14, 2021",Yi Zheng,"yzheng88@syr.edu
+","Syracuse University
+","Biomedical and Chemical Engineering
+","900 S Crouse Ave
+",Syracuse,New York,13210,USA
+GSM6210695,"Public on Jun 03, 2022",Cultured H9 hPSCs in mTeSR1,SRA,"Cultured H9 hPSCs in mTeSR1
+",Homo sapiens,"genotype: wildtype
+",NA,NA,polyA RNA,"10x genomics
+",RNA-Seq,transcriptomic,cDNA,Illumina NovaSeq 6000,"The .Rd files can be loaded into RStudio using ""load (""file_name.Rd"")"", and analyzed using the Seurat R package (https://satijalab.org/seurat/).
+Assembly: GRCh38.p13 and Pan_tro_3.0
+Supplementary files format and content: .Rd files are the output of R Studio containing the data anlaysis ressults.
+","Jun 01, 2022","Nov 29, 2022",Yi Zheng,"yzheng88@syr.edu
+","Syracuse University
+","Biomedical and Chemical Engineering
+","900 S Crouse Ave
+",Syracuse,New York,13210,USA
+GSM6210696,"Public on Jun 03, 2022",Human microfluidic embryoids at 0h,SRA,"microfluidic embryoids
+",Homo sapiens,"genotype: wildtype
+",NA,NA,polyA RNA,"10x genomics
+",RNA-Seq,transcriptomic,cDNA,Illumina NovaSeq 6000,"The .Rd files can be loaded into RStudio using ""load (""file_name.Rd"")"", and analyzed using the Seurat R package (https://satijalab.org/seurat/).
+Assembly: GRCh38.p13 and Pan_tro_3.0
+Supplementary files format and content: .Rd files are the output of R Studio containing the data anlaysis ressults.
+","Jun 01, 2022","Nov 29, 2022",Yi Zheng,"yzheng88@syr.edu
+","Syracuse University
+","Biomedical and Chemical Engineering
+","900 S Crouse Ave
+",Syracuse,New York,13210,USA
+GSM6210697,"Public on Jun 03, 2022",Human microfluidic embryoids at 12h,SRA,"microfluidic embryoids
+",Homo sapiens,"genotype: wildtype
+",NA,NA,polyA RNA,"10x genomics
+",RNA-Seq,transcriptomic,cDNA,Illumina NovaSeq 6000,"The .Rd files can be loaded into RStudio using ""load (""file_name.Rd"")"", and analyzed using the Seurat R package (https://satijalab.org/seurat/).
+Assembly: GRCh38.p13 and Pan_tro_3.0
+Supplementary files format and content: .Rd files are the output of R Studio containing the data anlaysis ressults.
+","Jun 01, 2022","Nov 29, 2022",Yi Zheng,"yzheng88@syr.edu
+","Syracuse University
+","Biomedical and Chemical Engineering
+","900 S Crouse Ave
+",Syracuse,New York,13210,USA
+GSM6210698,"Public on Jun 03, 2022",Human microfluidic embryoids at 48h with IWP2,SRA,"microfluidic embryoids
+",Homo sapiens,"genotype: wildtype
+",NA,NA,polyA RNA,"10x genomics
+",RNA-Seq,transcriptomic,cDNA,Illumina NovaSeq 6000,"The .Rd files can be loaded into RStudio using ""load (""file_name.Rd"")"", and analyzed using the Seurat R package (https://satijalab.org/seurat/).
+Assembly: GRCh38.p13 and Pan_tro_3.0
+Supplementary files format and content: .Rd files are the output of R Studio containing the data anlaysis ressults.
+","Jun 01, 2022","Nov 29, 2022",Yi Zheng,"yzheng88@syr.edu
+","Syracuse University
+","Biomedical and Chemical Engineering
+","900 S Crouse Ave
+",Syracuse,New York,13210,USA

@@ -1,0 +1,339 @@
+sample_id,Status,Title,Sample type,Source name,Organism,Characteristics,Extracted molecule,Extraction protocol,Library strategy,Library source,Library selection,Instrument model,Data processing,Submission date,Last update date,Contact name,Organization name,Street address,City,ZIP/Postal code,Country
+GSM4695826,"Public on May 15, 2023",PCW3-01_whole_body_20190614,SRA,"human embryo
+",Homo sapiens,"age: PCW3
+tissue: embryo
+region: whole embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Jul 26, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729674,"Public on May 15, 2023",PCW4-01_whole_body_20190920,SRA,"human embryo
+",Homo sapiens,"age: PCW4
+tissue: embryo
+region: whole embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729675,"Public on May 15, 2023",PCW4-02_whole_head_20190702,SRA,"human embryo
+",Homo sapiens,"age: PCW4
+tissue: head
+region: whole head
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729676,"Public on May 15, 2023",PCW4-03_whole_head_20190613,SRA,"human embryo
+",Homo sapiens,"age: PCW4
+tissue: head
+region: whole head
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729677,"Public on May 15, 2023",PCW5-01_whole_body_20190703,SRA,"human embryo
+",Homo sapiens,"age: PCW5
+tissue: embryo
+region: whole embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729678,"Public on May 15, 2023",PCW5-02_whole_head_20190911,SRA,"human embryo
+",Homo sapiens,"age: PCW5
+tissue: head
+region: whole head
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729679,"Public on May 15, 2023",PCW5-03_whole_head_20190614,SRA,"human embryo
+",Homo sapiens,"age: PCW5
+tissue: head
+region: whole head
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729680,"Public on May 15, 2023",PCW6-01_whole_head_20190906,SRA,"human embryo
+",Homo sapiens,"age: PCW6
+tissue: head
+region: whole head
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729681,"Public on May 15, 2023",PCW7-01_whole_head_20190619,SRA,"human embryo
+",Homo sapiens,"age: PCW7
+tissue: head
+region: whole head
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729682,"Public on May 15, 2023",PCW8-01_whole_head_20190619,SRA,"human embryo
+",Homo sapiens,"age: PCW8
+tissue: head
+region: whole head
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729683,"Public on May 15, 2023",PCW9-01_whole_brain_20181126,SRA,"human embryo
+",Homo sapiens,"age: PCW9
+tissue: brain tissue
+region: whole brain tissue
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729684,"Public on May 15, 2023",PCW9-02_whole_brain_20190423,SRA,"human embryo
+",Homo sapiens,"age: PCW9
+tissue: brain tissue
+region: whole brain tissue
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729685,"Public on May 15, 2023",PCW12-01_whole_brain_20190603,SRA,"human embryo
+",Homo sapiens,"age: PCW12
+tissue: brain tissue
+region: whole brain tissue
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729686,"Public on May 15, 2023",E9.5_mouse_whole_embryo_20200613,SRA,"mouse embryo
+",Mus musculus,"age: E9.5
+tissue: embryo
+region: whole embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM4729687,"Public on May 15, 2023",E10.5_mouse_whole_embryo_20200613,SRA,"mouse embryo
+",Mus musculus,"age: E10.5
+tissue: embryo
+region: whole embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+",RNA-Seq,transcriptomic,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome by Cellranger(v2.0.1 and v3.0.2)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Genome_build: hg19, mm10
+Supplementary_files_format_and_content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Aug 17, 2020","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM6736780,"Public on May 15, 2023",Spatial_10x_PCW4_20220122_slice1,SRA,"embryo
+",Homo sapiens,"tissue: embryo
+age: PCW4
+region: embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+Visium Spatial Gene Expression Slide & Reagent Kit
+Chromium Single Cell 3ʹ Reagent Kits v3
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome and mm10 mosue genome by Cellranger(v2.0.1 and v3.0.2) and Space Ranger (version 1.0.0)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Assembly: hg19, mm10
+Supplementary files format and content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Nov 17, 2022","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM6736781,"Public on May 15, 2023",Spatial_10x_PCW4_20220122_slice2,SRA,"embryo
+",Homo sapiens,"tissue: embryo
+age: PCW4
+region: embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+Visium Spatial Gene Expression Slide & Reagent Kit
+Chromium Single Cell 3ʹ Reagent Kits v3
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome and mm10 mosue genome by Cellranger(v2.0.1 and v3.0.2) and Space Ranger (version 1.0.0)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Assembly: hg19, mm10
+Supplementary files format and content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Nov 17, 2022","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM6736782,"Public on May 15, 2023",Spatial_10x_PCW4_20220122_slice3,SRA,"embryo
+",Homo sapiens,"tissue: embryo
+age: PCW4
+region: embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+Visium Spatial Gene Expression Slide & Reagent Kit
+Chromium Single Cell 3ʹ Reagent Kits v3
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome and mm10 mosue genome by Cellranger(v2.0.1 and v3.0.2) and Space Ranger (version 1.0.0)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Assembly: hg19, mm10
+Supplementary files format and content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Nov 17, 2022","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM6736783,"Public on May 15, 2023",Spatial_10x_PCW4_20220122_slice4,SRA,"embryo
+",Homo sapiens,"tissue: embryo
+age: PCW4
+region: embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+Visium Spatial Gene Expression Slide & Reagent Kit
+Chromium Single Cell 3ʹ Reagent Kits v3
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome and mm10 mosue genome by Cellranger(v2.0.1 and v3.0.2) and Space Ranger (version 1.0.0)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Assembly: hg19, mm10
+Supplementary files format and content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Nov 17, 2022","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM6736784,"Public on May 15, 2023",Spatial_10x_PCW4_20220122_slice5,SRA,"embryo
+",Homo sapiens,"tissue: embryo
+age: PCW4
+region: embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+Visium Spatial Gene Expression Slide & Reagent Kit
+Chromium Single Cell 3ʹ Reagent Kits v3
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome and mm10 mosue genome by Cellranger(v2.0.1 and v3.0.2) and Space Ranger (version 1.0.0)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Assembly: hg19, mm10
+Supplementary files format and content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Nov 17, 2022","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM6736785,"Public on May 15, 2023",Spatial_10x_PCW4_20220122_slice6,SRA,"embryo
+",Homo sapiens,"tissue: embryo
+age: PCW4
+region: embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+Visium Spatial Gene Expression Slide & Reagent Kit
+Chromium Single Cell 3ʹ Reagent Kits v3
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome and mm10 mosue genome by Cellranger(v2.0.1 and v3.0.2) and Space Ranger (version 1.0.0)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Assembly: hg19, mm10
+Supplementary files format and content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Nov 17, 2022","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM6736786,"Public on May 15, 2023",Spatial_10x_PCW4_20220122_slice7,SRA,"embryo
+",Homo sapiens,"tissue: embryo
+age: PCW4
+region: embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+Visium Spatial Gene Expression Slide & Reagent Kit
+Chromium Single Cell 3ʹ Reagent Kits v3
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome and mm10 mosue genome by Cellranger(v2.0.1 and v3.0.2) and Space Ranger (version 1.0.0)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Assembly: hg19, mm10
+Supplementary files format and content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Nov 17, 2022","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China
+GSM6736787,"Public on May 15, 2023",Spatial_10x_PCW4_20220122_slice8,SRA,"embryo
+",Homo sapiens,"tissue: embryo
+age: PCW4
+region: embryo
+",total RNA,"Human embryo samples were collected in ice-cold artificial cerebrospinal fluid (ACSF), single cell was selected by FACS
+Chromium™ Single Cell 3’ Reagent Kits v2
+Visium Spatial Gene Expression Slide & Reagent Kit
+Chromium Single Cell 3ʹ Reagent Kits v3
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina HiSeq 4000,"Illumina Casava1.8 software used for basecalling
+Reads were aligned to hg19 human genome and mm10 mosue genome by Cellranger(v2.0.1 and v3.0.2) and Space Ranger (version 1.0.0)
+Filtered count matrix was merged by Scanpy Package(v1.4.2)
+Assembly: hg19, mm10
+Supplementary files format and content: Filtered count matrix was formatted by mtx, and barcode and gene information was with tsv format
+","Nov 17, 2022","May 15, 2023",Zeyuan Liu,"Institute of Biophysics,Chinese Academy of Sciences
+","15 Datun Road, Chaoyang District, Beijing, 100101, China
+",Beijing,100101,China

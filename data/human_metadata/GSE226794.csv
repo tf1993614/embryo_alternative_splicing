@@ -1,0 +1,47 @@
+sample_id,Status,Title,Sample type,Source name,Organism,Characteristics,Treatment protocol,Growth protocol,Extracted molecule,Extraction protocol,Library strategy,Library source,Library selection,Instrument model,Data processing,Submission date,Last update date,Contact name,Organization name,Street address,City,State/province,ZIP/Postal code,Country
+GSM7083828,"Public on Sep 07, 2023",human_blastoid_day7,SRA,"WIBR3 (OCT4-GFP)
+",Homo sapiens,"culture condition: BAM
+passage: p5
+","Papain dissociation
+","7 day blastoid sample aggregated in 5i/L/A media 1 day, N2B27+NaPy 2 days, and BAM for 4 days at 5% oxygen in Aggrewell 400 plates. 14 day blastoids were collected at day 7 from the previous protocol and transferred into 96 round bottom plates with a 3D matrix of 50% matrigel and 50% GFR geltrex. They were maintained for 7 days (with daily media changes) in N2B27+NaPy+Estradiol (10nM) at 5% oxygen.
+",total RNA,"cDNA was prepared after the GEM generation and barcoding, followed by the GEM-RT reaction and bead cleanup steps. Purified cDNA was amplified for 11-13 cycles before being cleaned up using SPRIselect beads. Samples were then run on a Bioanalyzer to determine the cDNA concentration.
+GEX libraries were prepared as recommended by the 10x Genomics Chromium Single Cell 3’ Reagent Kits (v3 Chemistry) user guide with appropriate modifications to the PCR cycles based on the calculated cDNA concentration. For sample preparation on the 10x Genomics platform, the Chromium Single Cell 3’ GEM, Library and Gel Bead Kit v3 (PN-1000075), Chromium Single Cell B Chip Kit (PN-1000153), and Dual Index Kit TT Set A (PN-1000215) were used. The concentration of each library was accurately determined through qPCR utilizing the KAPA library Quantification Kit according to the manufacturer's protocol (KAPA Biosystems/Roche) to produce cluster counts appropriate for the Illumina NovaSeq6000 instrument.
+Normalized libraries were sequenced on a NovaSeq6000 S4 Flow Cell using the XP workflow and a 28x10x10x150 sequencing recipe according to manufacturer protocol. A median sequencing depth of 50,000 reads/cell was targeted for each Gene Expression Library
+",RNA-Seq,transcriptomic,cDNA,Illumina NovaSeq 6000,"Raw sequencing data were converted to fastq format using the cellranger mkfastq command (v.5.0.0).
+scRNA-seq reads were aligned to the GRCh38 (hg38) reference genome and quantified using the cellranger count command.
+Assembly: hg38
+Supplementary files format and content: Processed data files contain matrix with counts, barcodes and features provided as standard output by cellranger.
+","Mar 07, 2023","Sep 07, 2023",Sabine Dietmann,"Washington University School of Medicine
+","4565 McKinley Avenue
+",St Louis,MO,63110,USA
+GSM7083829,"Public on Sep 07, 2023",human_blastoid_day14,SRA,"WIBR3 (OCT4-GFP)
+",Homo sapiens,"culture condition: N2B27+Estradiol
+passage: p7
+","Papain dissociation
+","7 day blastoid sample aggregated in 5i/L/A media 1 day, N2B27+NaPy 2 days, and BAM for 4 days at 5% oxygen in Aggrewell 400 plates. 14 day blastoids were collected at day 7 from the previous protocol and transferred into 96 round bottom plates with a 3D matrix of 50% matrigel and 50% GFR geltrex. They were maintained for 7 days (with daily media changes) in N2B27+NaPy+Estradiol (10nM) at 5% oxygen.
+",total RNA,"cDNA was prepared after the GEM generation and barcoding, followed by the GEM-RT reaction and bead cleanup steps. Purified cDNA was amplified for 11-13 cycles before being cleaned up using SPRIselect beads. Samples were then run on a Bioanalyzer to determine the cDNA concentration.
+GEX libraries were prepared as recommended by the 10x Genomics Chromium Single Cell 3’ Reagent Kits (v3 Chemistry) user guide with appropriate modifications to the PCR cycles based on the calculated cDNA concentration. For sample preparation on the 10x Genomics platform, the Chromium Single Cell 3’ GEM, Library and Gel Bead Kit v3 (PN-1000075), Chromium Single Cell B Chip Kit (PN-1000153), and Dual Index Kit TT Set A (PN-1000215) were used. The concentration of each library was accurately determined through qPCR utilizing the KAPA library Quantification Kit according to the manufacturer's protocol (KAPA Biosystems/Roche) to produce cluster counts appropriate for the Illumina NovaSeq6000 instrument.
+Normalized libraries were sequenced on a NovaSeq6000 S4 Flow Cell using the XP workflow and a 28x10x10x150 sequencing recipe according to manufacturer protocol. A median sequencing depth of 50,000 reads/cell was targeted for each Gene Expression Library
+",RNA-Seq,transcriptomic,cDNA,Illumina NovaSeq 6000,"Raw sequencing data were converted to fastq format using the cellranger mkfastq command (v.5.0.0).
+scRNA-seq reads were aligned to the GRCh38 (hg38) reference genome and quantified using the cellranger count command.
+Assembly: hg38
+Supplementary files format and content: Processed data files contain matrix with counts, barcodes and features provided as standard output by cellranger.
+","Mar 07, 2023","Sep 07, 2023",Sabine Dietmann,"Washington University School of Medicine
+","4565 McKinley Avenue
+",St Louis,MO,63110,USA
+GSM7677371,"Public on Sep 07, 2023",human_blastoid_day21,SRA,"WIBR3 (OCT4-GFP)
+",Homo sapiens,"culture condition: N2B27+Estradiol
+passage: p7
+sequencing platform: IlluminaNovaSeq6000
+","Papain dissociation
+","The 21 day blastoid sample was aggregated in 5i/L/A media for 1 day, N2B27+NaPy for 2 days, and BIM for 4 days at 5% oxygen in Aggrewell 400 plates. The 14 day blastoids were collected at day 7 from the previous protocol and transferred into 96 round bottom plates containing a 3D matrix of 50% matrigel and 50% GFR geltrex. The 21 day blastoid sample was generated using Cultrex Ultrimatrix, which provided an alternative 3D matrix for post-implantation blastoid culture that supported robust development of embryonic and extraembryonic structures. These post-implantation blastoid samples were maintained after aggregation in BIM (with daily media changes) for an additional 7 days and 14 days, respectively, in N2B27+NaPy+Estradiol (10nM) at 5% oxygen.
+",total RNA,"cDNA was prepared after the GEM generation and barcoding, followed by the GEM-RT reaction and bead cleanup steps. Purified cDNA was amplified for 11-13cycles before being cleaned up using SPRIselect beads. Samples were then run on a Bioanalyzer to determine the cDNA concentration.
+GEX libraries were prepared as recommended by the 10x Genomics Chromium Single Cell3’ Reagent Kits(v3Chemistry) user guide with appropriate modifications to the PCR cycles based on the calculated cDNA concentration. For sample preparation on the 10x Genomics platform, the Chromium Single Cell 3’ GEM, Library and Gel Bead Kit v3 (PN-1000075), Chromium Single Cell B Chip Kit (PN-1000153), and Dual Index Kit TT Set A (PN-1000215) were used. The concentration of each library was accurately determined through qPCR utilizing the KAPA library Quantification Kit according to the manufacturer's protocol (KAPA Biosystems/Roche) to produce cluster counts appropriate for the Illumina NovaSeq6000 instrument.
+Normalized libraries were sequenced on a NovaSeq6000 S4 Flow Cell using the XP workflow and a28x10x10x150sequencing recipe according to manufacturer protocol. A median sequencing depth of 50,000 reads/cell was targeted for each Gene ExpressionLibrary
+",RNA-Seq,transcriptomic single cell,cDNA,Illumina HiSeq 2000,"Raw sequencing data were converted to fastq format using the cellranger mkfastq command (v.5.0.0).
+scRNA-seq reads were aligned to the GRCh38 (hg38) reference genome and quantified using the cellranger count command.
+Assembly: hg38
+Supplementary files format and content: Processed data files contain matrix with counts, barcodes and features provided as standard output by cellranger.
+","Aug 02, 2023","Sep 07, 2023",Sabine Dietmann,"Washington University School of Medicine
+","4565 McKinley Avenue
+",St Louis,MO,63110,USA
