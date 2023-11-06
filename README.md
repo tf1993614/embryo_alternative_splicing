@@ -67,9 +67,14 @@ If want to change the output directory in the parallel run:
 	parallel -a samples.txt -a samples2.txt bash sra2fastq.sh    # samples2.txt contains output directory
 
 
-For raw sequencing files downloaded from GEO database, the metadata of each SRA file was obtained by running `GEO_crawl.R`
+For raw sequencing files downloaded from GEO database, the sample attributes of each SRA file was obtained by running `GEO_crawl.R`
 
 	R GEO_crawl.R
+
+For raw sequencing files downloaded from arrayexpress database, the sample attributes of each sample was gained by visting the ArrayExpress website, for example:
+
+- go to the webiste e.g. https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-9388
+- click `Download` icon to download  MAGE-TAB Files 
 
 
 ## Cellranger pipeline
