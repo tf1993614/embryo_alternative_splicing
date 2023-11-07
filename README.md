@@ -3,7 +3,7 @@
 
 ## SRA to fastq conversion
 
-All single cell raw sequencing files (SRA) were downloaded by lanxiang Li using SRAtoolKit (version: 3.0.6). Source description files are in the **embryo_data.xlsx**.
+All single cell raw sequencing files (SRA) were downloaded by lanxiang Li using SRAtoolKit (version: 3.0.6). Original source description files are in the **embryo_data.xlsx**. Its clean version is `embryo_data(tidy up by Feng).csv`
 
 All raw SRA files are in `/mnt/disk2/disk_new2/`
 
