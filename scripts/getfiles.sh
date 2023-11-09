@@ -1,7 +1,10 @@
 #！/bin/bash
 
 
-paths=$(find "$1" -name "*.sra")
+paths=$(find "$2" -name "$1")
+paths=$(echo ${paths} | sort | uniq)
+
+echo $paths
 
 for path in ${paths}
 do
