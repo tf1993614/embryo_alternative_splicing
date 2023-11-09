@@ -89,8 +89,12 @@ Our own md5sum check values:
 - dfd654de39bff23917471e7fcc7a00cd       refdata-gex-GRCh38-2020-A.tar.gz
 - 886eeddde8731ffb58552d0bb81f533d       refdata-gex-mm10-2020-A.tar.gz
 
+We only run cellranger pipeline on 10x Genomics datasets including GSE229578, GSE134571, GSE185643, GSE218314 and GSE226794.
 
-## Alternative polyadenylation (APA) pipe line
+	parallel -a cellranger_all.txt bash cellranger.sh
+
+
+## Alternative polyadenylation (APA) pipeline
 
 Several softwares for detecting APA sites including, [scAPA](https://pubmed.ncbi.nlm.nih.gov/31501864/), [scAPAtrap](https://pubmed.ncbi.nlm.nih.gov/33142319/), [Sierra](https://pubmed.ncbi.nlm.nih.gov/32641141/), [scDaPars](https://pubmed.ncbi.nlm.nih.gov/34035046/), [SCAPTURE](https://pubmed.ncbi.nlm.nih.gov/34376223/), [MAAPER](https://pubmed.ncbi.nlm.nih.gov/34376236/) and [SCAPE](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9226526/). **SCAPE** is our first trial since its higher performance and accuracy, friendly tutorial as well as supporting different single cell sequencing technology. The detailed user guide can be found [here](https://github.com/LuChenLab/SCAPE/tree/main).
 
@@ -105,4 +109,4 @@ We downloaded human and mouse GTF files from genecode databases. md5 check value
 - cd64f4e6b373084baa96f5d9ebdcc082  ./human/gencode.v34.primary_assembly.annotation.gtf.gz
 - c5125258a0a2c5250ddb4c192abbf4e8  ./mouse/gencode.vM25.primary_assembly.annotation.gtf.gz
 
-**Note**: we didn't download the latest release for those GTF files since reference transcriptomes we downloaded from 10x Genomics website were built under older GTF files.  
+**Note**: *we didn't download the latest release for those GTF files since reference transcriptomes we downloaded from 10x Genomics website were built under older GTF files*.  
