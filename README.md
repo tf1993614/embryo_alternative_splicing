@@ -111,7 +111,8 @@ We downloaded human and mouse GTF files from genecode databases. md5 check value
 
 **Note**: *we didn't download the latest release for those GTF files since reference transcriptomes we downloaded from 10x Genomics website were built under older GTF files*.  
 
-The loadData function in the [tutorial](https://github.com/LuChenLab/SCAPE/wiki/Differential-APA-analysis-(Mouse-brain-vs-bone-marrow,-R) didn't run successfully, to fix this problem, create a new function named my_loadData by change 30th line of source code in the following way:
+The loadData function in the [tutorial](https://github.com/LuChenLab/SCAPE/wiki/Differential-APA-analysis-(Mouse-brain-vs-bone-marrow,-R)) didn't run successfully, to fix this problem, create a new function named my_loadData by change 30th line of source code in the following way:
+
 	return(map(Layers(objs), ~ Seurat::GetAssayData(objs, layer = .x)))
 	 
 Then, create a new function called add_row_for_consistance, the code is shown below:
