@@ -110,3 +110,44 @@ We downloaded human and mouse GTF files from genecode databases. md5 check value
 - c5125258a0a2c5250ddb4c192abbf4e8  ./mouse/gencode.vM25.primary_assembly.annotation.gtf.gz
 
 **Note**: *we didn't download the latest release for those GTF files since reference transcriptomes we downloaded from 10x Genomics website were built under older GTF files*.  
+
+The loadData function in the [tutorial](https://github.com/LuChenLab/SCAPE/wiki/Differential-APA-analysis-(Mouse-brain-vs-bone-marrow,-R) didn't run successfully, to fix this problem, create a new function named my_loadData by change 30th line of source code in the following way:
+	return(map(Layers(objs), ~ Seurat::GetAssayData(objs, layer = .x)))
+	 
+Then, create a new function called add_row_for_consistance, the code is shown below:
+
+	add_row_for_consistance = function(matrix_ls,
+                                   target_data,
+                                   collapse = F){
+	row_count = map_int(matrix_ls, ~ nrow(.x))
+	nrow = max(row_count)
+  	row_selector = unique(unlist(map(matrix_ls, ~ rownames(.x)))) 
+  
+  	if(is.null(names(matrix_ls))){
+    		stop("matrix_ls should be named list")
+  	}
+  
+  	res = map(
+    		names(matrix_ls),
+    		\(x){
+      			data = matrix_ls[[x]]
+      			column_selector = colnames(target_data)[str_detect(colnames(target_data), x)]
+      			data = data[, column_selector]
+      			fill_na = row_selector[! row_selector %in% rownames(data)]
+      			na_matrix = Matrix::Matrix(0, nrow = length(fill_na), ncol = ncol(data))
+      			rownames(na_matrix) = fill_na
+      			output = rbind(data, na_matrix)
+      			output = output %>% as.data.frame() %>% rownames_to_column("id")
+    		}
+ 	)
+  
+  	if(collapse){
+    		res = reduce(res, left_join, by = "id")
+    		res = res %>% column_to_rownames("id")
+    		return(Matrix::Matrix(as.matrix(res)))
+ 	}
+  	else{
+    		res = res %>% column_to_rownames("id")
+    		return(Matrix::Matrix(as.matrix(res)))
+  		}
+	} 
