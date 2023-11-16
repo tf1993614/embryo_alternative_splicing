@@ -4,6 +4,14 @@ set -e
 set -u
 set -o pipefail
 
+if [ "$#" -lt 2 ]
+then
+	echo "Warning: Two arguments should be provied."
+	echo "First argument should be regular expression matching the file name you want to find."
+	echo "Second argument should be the directory you want to search in."
+	exit 1
+fi
+
 paths=$(find "$2" -name "$1")
 paths=$(echo ${paths} | sort | uniq)
 
