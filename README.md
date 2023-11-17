@@ -93,6 +93,15 @@ We only run cellranger pipeline on 10x Genomics datasets including GSE229578, GS
 
 	parallel -a cellranger_all.txt bash cellranger.sh
 
+**Warning:** The BAM file produced by cellranger lost flow cell information in read group tag. One possible problem for this may be one extra space in headerin some fastq file, for example:
+
+        # problem example (extra space after @xxx ID)
+        @SRR9719056.1 K00135:362:H2JNGBBXY:5:1101:1184:1261 length=8
+
+        # good example (can get tidy BAM file with flow cell info in read group tag after running cellranger)
+        @HF2_27192:5:1101:1144:1297 1:N:0:NCTTAAAN
+
+The standard format of header in fastq file can be found [here](https://zhuanlan.zhihu.com/p/158694643).
 
 ## Alternative polyadenylation (APA) pipeline
 
@@ -110,16 +119,6 @@ We downloaded human and mouse GTF files from genecode databases. md5 check value
 - c5125258a0a2c5250ddb4c192abbf4e8  ./mouse/gencode.vM25.primary_assembly.annotation.gtf.gz
 
 **Note**: *we didn't download the latest release for those GTF files since reference transcriptomes we downloaded from 10x Genomics website were built under older GTF files*.  
-
-**Warning:** The BAM file produced by cellranger lost flow cell information in read group tag. One possible problem for this may be one extra space in headerin some fastq file, for example:
-	
-	# problem example (extra space after @xxx ID)
-	@SRR9719056.1 K00135:362:H2JNGBBXY:5:1101:1184:1261 length=8	
-	
-	# good example (can get tidy BAM file with flow cell info in read group tag after running cellranger)
-	@HF2_27192:5:1101:1144:1297 1:N:0:NCTTAAAN
-
-The standard format of header in fastq file can be found [here](https://zhuanlan.zhihu.com/p/158694643).	 
 	
 The loadData function in the [tutorial](https://github.com/LuChenLab/SCAPE/wiki/Differential-APA-analysis-(Mouse-brain-vs-bone-marrow,-R)) didn't run successfully, to fix this problem, create a new function named `my_loadData` by change 30th line of source code in the following way:
 
