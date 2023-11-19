@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# need to install sshpass
+# run `conda install -c conda-forge sshpass` to install sshpass
+
 set -e 
 set -u
 set -o pipefail
@@ -10,7 +13,9 @@ then
 	echo "First argument should be regular expression matching the file name you want to search"
 	echo "Second argument should be directory you want to search in"
 	echo "Third argument should be a file containing the target directory path in separate line. The number of line should be equivalent to the number of file "
-	echo "Fourth argument is optional and should be extra regular expression to filter out your path"
+	echo "Fourth argument should be password to visit another host"
+	echo "Fifth argument should be another host name"
+	echo "Sixth argument is optional and should be extra regular expression to filter out your path"
 fi	
 
 
@@ -33,10 +38,10 @@ then
 fi
 
 
-if [ "$#" -eq 4 ]
+if [ "$#" -eq 6 ]
 then 
 	echo "file path is shown below:"
-	echo ${bash_array[@]} | sed 's/ /\n/g' | grep $4 | sort -k1n
+	echo ${bash_array[@]} | sed 's/ /\n/g' | grep $6 | sort -k1n
 	cycle=($(echo ${bash_array[@]} | sed 's/ /\n/g' | grep $4 | sort -k1n))
 fi
 
@@ -45,6 +50,6 @@ target_path=($(cat $3))
 for index in $(seq 0 $((${#cycle[@]} - 1)))
 do
 	echo "transfering ${cycle[index]}"
-	scp ${cycle[index]} "fengtang@192.168.157.40:${target_path[index]}"
+	sshpass -p $4 scp ${cycle[index]} "$5:${target_path[index]}"
 	echo "finish transferring the file to ${target_path[index]}"
 done
