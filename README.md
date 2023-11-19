@@ -56,7 +56,7 @@ SRA to fastq conversion was done by the script (**sra2fastq.sh**) written by Fen
 
 To parallelly run `sra2fastq.sh`, we can run `getfiles.sh` to get the directories containing SRA files, for example:
 	
-	bash getfiles.sh  /mnt/disk2/disk_new2/Human_data > samples.txt     #The result of `getfiles.sh` is shown in the samples.txt. 
+	bash getfiles.sh "*.sra" /mnt/disk2/disk_new2/Human_data > samples.txt     #The result of `getfiles.sh` is shown in the samples.txt. 
 
 Then，run following code:
 	
@@ -93,7 +93,7 @@ We only run cellranger pipeline on 10x Genomics datasets including GSE229578, GS
 
 	parallel -a cellranger_all.txt bash cellranger.sh
 
-**Warning:** The BAM file produced by cellranger lost flow cell information in read group tag. One possible problem for this may be one extra space in headerin some fastq file, for example:
+**Warning:** The BAM file produced by cellranger lost flow cell information in read group tag. One possible problem for this may be one extra space in header in some fastq file, for example:
 
         # problem example (extra space after @xxx ID)
         @SRR9719056.1 K00135:362:H2JNGBBXY:5:1101:1184:1261 length=8
@@ -102,6 +102,10 @@ We only run cellranger pipeline on 10x Genomics datasets including GSE229578, GS
         @HF2_27192:5:1101:1144:1297 1:N:0:NCTTAAAN
 
 The standard format of header in fastq file can be found [here](https://zhuanlan.zhihu.com/p/158694643).
+
+Since downstream **SCAPE** software used to detect alternative polyadenlation (APA) needs the flow cell information in the read group tag of BAM file, we have to fix the header inthose 'problem' fastq files. For this, run `fix_header_in_fastq.sh`:
+
+	bash fix_header_in_fastq.sh {top directory you want to search fastq files in}  # fresh fastq.gz file with fixed header will write to same directory where 'problem' fastq file settles in. Those fresh fastq.gz file will be named in this tradition: `new{followed by origin file name}`  
 
 ## Alternative polyadenylation (APA) pipeline
 
