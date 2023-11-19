@@ -34,7 +34,11 @@ then
 	echo "file path is shown below:"
 	echo ${bash_array[@]} | sed 's/ /\n/g' | sort -k1n
 	cycle=($(echo ${bash_array[@]} | sed 's/ /\n/g' | sort -k1n))
-	exit 1
+	read -p "Do you want to continue? (y/n) " goon
+	if [ $goon == "n" ]
+	then 
+		exit 1
+	fi
 fi
 
 
@@ -43,6 +47,11 @@ then
 	echo "file path is shown below:"
 	echo ${bash_array[@]} | sed 's/ /\n/g' | grep $6 | sort -k1n
 	cycle=($(echo ${bash_array[@]} | sed 's/ /\n/g' | grep $4 | sort -k1n))
+	read -p "Do you want to continue? (y/n) " goon
+        if [ $goon == "n" ]
+        then
+                exit 1
+        fi
 fi
 
 target_path=($(cat $3))
