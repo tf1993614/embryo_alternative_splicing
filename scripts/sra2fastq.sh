@@ -72,7 +72,8 @@ then
 fi
 
 for path in ${paths}
-do
+do 
+{
 	name=$(basename -s ".sra" ${path})
 	echo -e "\033[34m $(date +'%F %X') \033[0m | working on \033[31m${name}\033[0m"
 	length=$(echo ${path} | sed 's/\//\t/g' | awk -F "\t" "{print NF;exit}")
@@ -131,4 +132,6 @@ do
 
 	echo "\033[34m $(date +'%F %X') \033[0m | finish renaming for \033[31m${name}\033[0m"
 
-done
+}& 
+done 
+wait

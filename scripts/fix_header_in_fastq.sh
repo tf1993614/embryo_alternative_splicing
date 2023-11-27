@@ -85,6 +85,7 @@ fi
 
 for file in ${fastq_files}
 do
+{
 	length=$(echo ${file} | sed 's/\//\t/g' | awk -F "\t" "{print NF;exit}")
 	length=$(($length - 1))
 	final_dir=$(echo ${file} | sed 's/\//\t/g' | cut -f1-${length} | sed 's/\t/\//g')
@@ -92,4 +93,6 @@ do
 	echo -e "\033[34m$(date +'%F %X')\033[0m | fixing header in \033[31m$(basename ${file})\033[0m"
 	zcat ${file} | awk '{if(NR % 4 == 1){sub(/ /, "_");print} else {print}}' | gzip > ${file_name}
 	echo -e "\033[34m$(date +'%F %X')\033[0m | fixed file write to \033[31m${file_name}\033[0m"	
+}&
 done
+wait
